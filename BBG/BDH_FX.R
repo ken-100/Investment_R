@@ -37,3 +37,5 @@ for (i in 1:length(T1))
 colnames(df)= c("Date",T1)
 print(dim(df))
 df
+
+# https://cran.r-project.org/web/packages/Rblpapi/Rblpapi.pdf
