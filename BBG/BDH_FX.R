@@ -38,4 +38,17 @@ colnames(df)= c("Date",T1)
 print(dim(df))
 df
 
+
+df = bdh("ES1 Index",
+            "px_last",
+            start = from,
+            end = to,
+            options = c("periodicitySelection" = "WEEKLY"))
+df1 = bdh("ES1 Index",
+            "px_last",
+            start = from,
+            end = to,
+            options = c("periodicitySelection" = "WEEKLY", "currency"="EUR"))
+
+
 # https://cran.r-project.org/web/packages/Rblpapi/Rblpapi.pdf
